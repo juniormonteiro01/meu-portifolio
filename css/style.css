@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding-top: 24px;    
+}
+
+.perfil img {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.perfil h1,
+.perfil p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;  
+}
+
+.menu a {
+    width: 540px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #f24207;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.certificados {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.certificado {
+    padding: 20px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+
+.certificado h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.certificado p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.lista-projetos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #f24207;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.lista-certificados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.lista-certificados a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #f24207;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.sobre-conteudo {
+    margin-top: 32px;
+}
+
+.sobre-conteudo h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.sobre-conteudo p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.projeto img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.projeto a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #f24207;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+}
+
+.sobre-conteudo h2,
+.sobre-conteudo p {
+    color: #FFFFFF;
+}
+
+/* Área principal da página de projetos */
+main.pagina-projetos {
+    max-width: 100%;
+}
+
+/* Grade com dois cards por fileira */
+.lista-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 392px);
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+/* Tamanho e organização dos cards */
+.lista-projetos .projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 392px;
+    height: 204px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+
+/* Imagem dentro de cada card */
+.lista-projetos .projeto img {
+    display: block;
+    width: 100%;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Botão de acesso ao projeto */
+.lista-projetos .projeto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #f24207;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+/* Botões das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.redes-sociais a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: #f24207;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.redes-sociais img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    object-fit: contain;
+}
