@@ -251,3 +251,11 @@ main.pagina-projetos {
     max-width: 24px;
     object-fit: contain;
 }
+
+@media (max-width: 600px) {
+    .menu a {
+        width: 280px;
+        height: 52px;
+    }
+}
+
