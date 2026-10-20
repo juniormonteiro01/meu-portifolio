@@ -176,7 +176,7 @@ main.pagina-projetos {
 /* Grade com dois cards por fileira */
 .lista-projetos {
     display: grid;
-    grid-template-columns: repeat(2, 392px);
+    grid-template-columns: repeat(2, 360px);
     justify-content: center;
     gap: 16px;
     margin-top: 32px;
@@ -187,9 +187,9 @@ main.pagina-projetos {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 392px;
-    height: 204px;
-    padding: 15px;
+    width: 360px;
+    height: 200px;
+    padding: 16px;
     box-sizing: border-box;
     border: 1px solid #DDDDDD;
     border-radius: 8px;
@@ -251,11 +251,45 @@ main.pagina-projetos {
     max-width: 24px;
     object-fit: contain;
 }
-
+/*tamanho dos botoes da tela inicial*/
 @media (max-width: 600px) {
     .menu a {
         width: 280px;
         height: 52px;
     }
 }
+
+/*tamanho dos botoes da pagina dos projetos*/
+@media (max-width: 600px) {
+    .lista-projetos {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .lista-projetos .projeto {
+        width: 280px;
+        height: 204px;
+        margin: 0 auto;
+    }
+}
+
+.botao-voltar {
+    display: block;
+    width: fit-content;
+    margin: 16px auto 24px;
+    text-align: center;
+    padding: 10px 16px;
+    color: #FFFFFF;
+    background-color: #f24207;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #c93405;
+}
+
 
